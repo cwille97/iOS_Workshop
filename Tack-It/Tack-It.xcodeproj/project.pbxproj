@@ -14,7 +14,7 @@
 		3D59659921243978008B8C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D59659721243978008B8C40 /* LaunchScreen.storyboard */; };
 		3D5965A421243978008B8C40 /* Tack_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5965A321243978008B8C40 /* Tack_ItTests.swift */; };
 		3D5965AF21243978008B8C40 /* Tack_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5965AE21243978008B8C40 /* Tack_ItUITests.swift */; };
-		3D5965BD21244F10008B8C40 /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5965BC21244F10008B8C40 /* UITableViewController.swift */; };
+		3D6A54222125FD1100B70CF1 /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		3D5965AA21243978008B8C40 /* Tack-ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tack-ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5965AE21243978008B8C40 /* Tack_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tack_ItUITests.swift; sourceTree = "<group>"; };
 		3D5965B021243978008B8C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D5965BC21244F10008B8C40 /* UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
+		3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				3D59658E21243977008B8C40 /* AppDelegate.swift */,
 				3D59659021243977008B8C40 /* ViewController.swift */,
 				3D59659221243977008B8C40 /* Main.storyboard */,
-				3D5965BC21244F10008B8C40 /* UITableViewController.swift */,
+				3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */,
 				3D59659521243978008B8C40 /* Assets.xcassets */,
 				3D59659721243978008B8C40 /* LaunchScreen.storyboard */,
 				3D59659A21243978008B8C40 /* Info.plist */,
@@ -260,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D59659121243977008B8C40 /* ViewController.swift in Sources */,
-				3D5965BD21244F10008B8C40 /* UITableViewController.swift in Sources */,
+				3D6A54222125FD1100B70CF1 /* TableViewCellController.swift in Sources */,
 				3D59658F21243977008B8C40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
