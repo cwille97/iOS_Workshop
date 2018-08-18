@@ -1,0 +1,6 @@
+framework module Pods_Tack_It {
+  umbrella header "Pods-Tack-It-umbrella.h"
+
+  export *
+  module * { export * }
+}

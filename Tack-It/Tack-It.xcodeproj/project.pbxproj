@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234684BCAB3E4AE3A2CD867D /* Pods_Tack_ItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D4A41485C4C1EF6F66869D /* Pods_Tack_ItUITests.framework */; };
 		3D59658F21243977008B8C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59658E21243977008B8C40 /* AppDelegate.swift */; };
 		3D59659121243977008B8C40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59659021243977008B8C40 /* ViewController.swift */; };
 		3D59659421243977008B8C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D59659221243977008B8C40 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		3D5965A421243978008B8C40 /* Tack_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5965A321243978008B8C40 /* Tack_ItTests.swift */; };
 		3D5965AF21243978008B8C40 /* Tack_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5965AE21243978008B8C40 /* Tack_ItUITests.swift */; };
 		3D6A54222125FD1100B70CF1 /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */; };
+		3DB2E5CA21278C7800F638A9 /* SubmitPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2E5C921278C7800F638A9 /* SubmitPostViewController.swift */; };
+		3DB2E5CE2128632100F638A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DB2E5CD2128632100F638A9 /* GoogleService-Info.plist */; };
+		E8AB260C2F9D51E9C2B55089 /* Pods_Tack_ItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBBB912EFF96D335BF9D643 /* Pods_Tack_ItTests.framework */; };
+		EDC51BC2B96F61C5DF55D03F /* Pods_Tack_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FC36EEC8ADA1C94553057 /* Pods_Tack_It.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007A821DCF0658268CEFAF56 /* Pods-Tack-ItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tack-ItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tack-ItUITests/Pods-Tack-ItUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EBBB912EFF96D335BF9D643 /* Pods_Tack_ItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tack_ItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C68BF03A0CAF25ACB2443B2 /* Pods-Tack-ItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tack-ItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tack-ItTests/Pods-Tack-ItTests.debug.xcconfig"; sourceTree = "<group>"; };
+		364AC673B48E505262FFF1C3 /* Pods-Tack-It.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tack-It.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tack-It/Pods-Tack-It.release.xcconfig"; sourceTree = "<group>"; };
+		36B2B4E5924CDFEBC8099440 /* Pods-Tack-ItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tack-ItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tack-ItUITests/Pods-Tack-ItUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D59658B21243977008B8C40 /* Tack-It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tack-It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D59658E21243977008B8C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D59659021243977008B8C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,12 @@
 		3D5965AE21243978008B8C40 /* Tack_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tack_ItUITests.swift; sourceTree = "<group>"; };
 		3D5965B021243978008B8C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
+		3DB2E5C921278C7800F638A9 /* SubmitPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPostViewController.swift; sourceTree = "<group>"; };
+		3DB2E5CD2128632100F638A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A2193D0D5560F5B54C3A242 /* Pods-Tack-It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tack-It.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tack-It/Pods-Tack-It.debug.xcconfig"; sourceTree = "<group>"; };
+		9B7FC36EEC8ADA1C94553057 /* Pods_Tack_It.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tack_It.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8E98F414A5483CFA9E7421 /* Pods-Tack-ItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tack-ItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tack-ItTests/Pods-Tack-ItTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2D4A41485C4C1EF6F66869D /* Pods_Tack_ItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tack_ItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC51BC2B96F61C5DF55D03F /* Pods_Tack_It.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AB260C2F9D51E9C2B55089 /* Pods_Tack_ItTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234684BCAB3E4AE3A2CD867D /* Pods_Tack_ItUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A9EAF58F15B89B988F023A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FC36EEC8ADA1C94553057 /* Pods_Tack_It.framework */,
+				0EBBB912EFF96D335BF9D643 /* Pods_Tack_ItTests.framework */,
+				B2D4A41485C4C1EF6F66869D /* Pods_Tack_ItUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D59658221243977008B8C40 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				3D5965A221243978008B8C40 /* Tack-ItTests */,
 				3D5965AD21243978008B8C40 /* Tack-ItUITests */,
 				3D59658C21243977008B8C40 /* Products */,
+				9860AB2615EAD5475078A6C0 /* Pods */,
+				2A9EAF58F15B89B988F023A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +133,12 @@
 				3D59658E21243977008B8C40 /* AppDelegate.swift */,
 				3D59659021243977008B8C40 /* ViewController.swift */,
 				3D59659221243977008B8C40 /* Main.storyboard */,
+				3DB2E5C921278C7800F638A9 /* SubmitPostViewController.swift */,
 				3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */,
 				3D59659521243978008B8C40 /* Assets.xcassets */,
 				3D59659721243978008B8C40 /* LaunchScreen.storyboard */,
 				3D59659A21243978008B8C40 /* Info.plist */,
+				3DB2E5CD2128632100F638A9 /* GoogleService-Info.plist */,
 			);
 			path = "Tack-It";
 			sourceTree = "<group>";
@@ -128,6 +161,19 @@
 			path = "Tack-ItUITests";
 			sourceTree = "<group>";
 		};
+		9860AB2615EAD5475078A6C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A2193D0D5560F5B54C3A242 /* Pods-Tack-It.debug.xcconfig */,
+				364AC673B48E505262FFF1C3 /* Pods-Tack-It.release.xcconfig */,
+				1C68BF03A0CAF25ACB2443B2 /* Pods-Tack-ItTests.debug.xcconfig */,
+				AC8E98F414A5483CFA9E7421 /* Pods-Tack-ItTests.release.xcconfig */,
+				007A821DCF0658268CEFAF56 /* Pods-Tack-ItUITests.debug.xcconfig */,
+				36B2B4E5924CDFEBC8099440 /* Pods-Tack-ItUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D5965B321243978008B8C40 /* Build configuration list for PBXNativeTarget "Tack-It" */;
 			buildPhases = (
+				4B10B25A40644C4838A466E0 /* [CP] Check Pods Manifest.lock */,
 				3D59658721243977008B8C40 /* Sources */,
 				3D59658821243977008B8C40 /* Frameworks */,
 				3D59658921243977008B8C40 /* Resources */,
+				8A44F9FE80F3EC3733359E90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D5965B621243978008B8C40 /* Build configuration list for PBXNativeTarget "Tack-ItTests" */;
 			buildPhases = (
+				F017751727B403E7D53BA9A9 /* [CP] Check Pods Manifest.lock */,
 				3D59659B21243978008B8C40 /* Sources */,
 				3D59659C21243978008B8C40 /* Frameworks */,
 				3D59659D21243978008B8C40 /* Resources */,
@@ -170,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D5965B921243978008B8C40 /* Build configuration list for PBXNativeTarget "Tack-ItUITests" */;
 			buildPhases = (
+				777FF966BC70562DF229B9CF /* [CP] Check Pods Manifest.lock */,
 				3D5965A621243978008B8C40 /* Sources */,
 				3D5965A721243978008B8C40 /* Frameworks */,
 				3D5965A821243978008B8C40 /* Resources */,
@@ -233,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D59659921243978008B8C40 /* LaunchScreen.storyboard in Resources */,
+				3DB2E5CE2128632100F638A9 /* GoogleService-Info.plist in Resources */,
 				3D59659621243978008B8C40 /* Assets.xcassets in Resources */,
 				3D59659421243977008B8C40 /* Main.storyboard in Resources */,
 			);
@@ -254,6 +305,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B10B25A40644C4838A466E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tack-It-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777FF966BC70562DF229B9CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tack-ItUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A44F9FE80F3EC3733359E90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tack-It/Pods-Tack-It-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tack-It/Pods-Tack-It-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F017751727B403E7D53BA9A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tack-ItTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D59658721243977008B8C40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +389,7 @@
 			files = (
 				3D59659121243977008B8C40 /* ViewController.swift in Sources */,
 				3D6A54222125FD1100B70CF1 /* TableViewCellController.swift in Sources */,
+				3DB2E5CA21278C7800F638A9 /* SubmitPostViewController.swift in Sources */,
 				3D59658F21243977008B8C40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +561,7 @@
 		};
 		3D5965B421243978008B8C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2193D0D5560F5B54C3A242 /* Pods-Tack-It.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +579,7 @@
 		};
 		3D5965B521243978008B8C40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 364AC673B48E505262FFF1C3 /* Pods-Tack-It.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +597,7 @@
 		};
 		3D5965B721243978008B8C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C68BF03A0CAF25ACB2443B2 /* Pods-Tack-ItTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +618,7 @@
 		};
 		3D5965B821243978008B8C40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC8E98F414A5483CFA9E7421 /* Pods-Tack-ItTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +639,7 @@
 		};
 		3D5965BA21243978008B8C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007A821DCF0658268CEFAF56 /* Pods-Tack-ItUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +659,7 @@
 		};
 		3D5965BB21243978008B8C40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B2B4E5924CDFEBC8099440 /* Pods-Tack-ItUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

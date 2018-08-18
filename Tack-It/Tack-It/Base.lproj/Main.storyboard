@@ -60,7 +60,7 @@
                         <viewLayoutGuide key="safeArea" id="2cF-Bm-Ttv"/>
                     </view>
                     <connections>
-                        <outlet property="password" destination="icW-7K-atk" id="Ji2-2C-Xl1"/>
+                        <outlet property="passWord" destination="icW-7K-atk" id="ONZ-rg-VRA"/>
                         <outlet property="userName" destination="QXV-rt-hKj" id="F7d-ty-xKH"/>
                         <outlet property="view" destination="8Hh-Wj-wjX" id="snc-zF-2eE"/>
                     </connections>
@@ -136,6 +136,7 @@
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOut:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="Q7W-tF-5OS"/>
+                                    <segue destination="kg4-G9-CCN" kind="show" id="HeI-L3-84D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwl-Z4-hzf">
@@ -144,6 +145,7 @@
                                 <state key="normal" title="Submit a Post"/>
                                 <connections>
                                     <action selector="submitPost:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="c5t-5f-r1W"/>
+                                    <segue destination="5dP-zr-5wk" kind="show" id="xF1-Fx-7AH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,7 +161,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qn-H6-Hvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1637.5999999999999" y="33.733133433283363"/>
+            <point key="canvasLocation" x="1850" y="33"/>
+        </scene>
+        <!--Submit Post View Controller-->
+        <scene sceneID="0C0-Ye-soF">
+            <objects>
+                <viewController id="5dP-zr-5wk" customClass="SubmitPostViewController" customModule="Tack_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCp-Rf-DTn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="post title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Woq-Gh-trU">
+                                <rect key="frame" x="33" y="99" width="314" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="post description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jph-Is-FmZ">
+                                <rect key="frame" x="33" y="151" width="314" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-BY-mso">
+                                <rect key="frame" x="33" y="39" width="93" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelPost:" destination="5dP-zr-5wk" eventType="touchUpInside" id="PVO-kA-sNg"/>
+                                    <action selector="logOut:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="qjQ-5p-tec"/>
+                                    <segue destination="Xuy-cO-bQU" kind="show" id="QFC-Dc-8i3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00u-G8-7yL">
+                                <rect key="frame" x="229" y="39" width="118" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitPost:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="4OR-k8-cH5"/>
+                                    <action selector="submitPost:" destination="5dP-zr-5wk" eventType="touchUpInside" id="sKF-zW-ob0"/>
+                                    <segue destination="Xuy-cO-bQU" kind="show" id="3wQ-Pc-XEh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5uB-e9-Ma2"/>
+                    </view>
+                    <connections>
+                        <outlet property="postDescription" destination="jph-Is-FmZ" id="tqo-cw-Vbz"/>
+                        <outlet property="postTitle" destination="Woq-Gh-trU" id="Qcy-hw-mSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EgZ-Tf-kbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="28.335832083958024"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QFC-Dc-8i3"/>
+    </inferredMetricsTieBreakers>
 </document>

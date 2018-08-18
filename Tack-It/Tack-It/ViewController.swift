@@ -48,6 +48,7 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
     @IBOutlet weak var userName: UITextField! // variable for the username
     @IBOutlet weak var passWord: UITextField! // variable for the password
     
+    
     @IBAction func loginSubmit(_ sender: Any) {
         // use Firebase authentication to validate credentials
     }
