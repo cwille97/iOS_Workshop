@@ -1,6 +1,0 @@
-framework module Pods_Tack_ItTests {
-  umbrella header "Pods-Tack-ItTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

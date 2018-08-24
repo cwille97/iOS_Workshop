@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
+    
+      var handle: AuthStateDidChangeListenerHandle?
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(0)
     }
@@ -45,17 +50,38 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var userName: UITextField! // variable for the username
-    @IBOutlet weak var passWord: UITextField! // variable for the password
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Begin Firebase authentication listener
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+        }
+        // End Firebase authentication listener
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Removing the Firebase authentication listener
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+    @IBOutlet weak var email: UITextField! // user email
+    @IBOutlet weak var password: UITextField! // user password
     
     
-    @IBAction func loginSubmit(_ sender: Any) {
+    @IBAction func emailLogin(_ sender: Any) {
         // use Firebase authentication to validate credentials
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+        }
     }
     
-    @IBAction func signUpSubmit(_ sender: Any) {
+    @IBAction func didCreateAccount(_ sender: Any) {
         // use Firebase to create the user an account
+        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
+            // ...
+            guard let user = authResult?.user else { return }
+        }
     }
+
     
     @IBAction func logOut(_ sender: Any) {
         // log out the user, return to home screen

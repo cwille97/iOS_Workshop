@@ -18,9 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXV-rt-hKj">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXV-rt-hKj">
                                 <rect key="frame" x="48" y="138" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="email"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -37,6 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="emailLogin:" destination="kg4-G9-CCN" eventType="touchUpInside" id="NPn-22-09l"/>
                                     <segue destination="Xuy-cO-bQU" kind="show" id="LuA-gX-Ec6"/>
                                 </connections>
                             </button>
@@ -45,7 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="signUpSubmit:" destination="kg4-G9-CCN" eventType="touchUpInside" id="w5e-va-55d"/>
+                                    <action selector="didCreateAccount:" destination="kg4-G9-CCN" eventType="touchUpInside" id="5Cr-QA-bJn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12f-g6-IPs">
@@ -60,8 +62,8 @@
                         <viewLayoutGuide key="safeArea" id="2cF-Bm-Ttv"/>
                     </view>
                     <connections>
-                        <outlet property="passWord" destination="icW-7K-atk" id="ONZ-rg-VRA"/>
-                        <outlet property="userName" destination="QXV-rt-hKj" id="F7d-ty-xKH"/>
+                        <outlet property="email" destination="QXV-rt-hKj" id="y3m-E7-WIa"/>
+                        <outlet property="password" destination="icW-7K-atk" id="7FI-aS-uuC"/>
                         <outlet property="view" destination="8Hh-Wj-wjX" id="snc-zF-2eE"/>
                     </connections>
                 </viewController>
@@ -220,6 +222,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QFC-Dc-8i3"/>
+        <segue reference="LuA-gX-Ec6"/>
     </inferredMetricsTieBreakers>
 </document>

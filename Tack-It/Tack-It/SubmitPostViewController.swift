@@ -7,8 +7,27 @@
 //
 
 import UIKit
+import Firebase
 
 class SubmitPostViewController: UIViewController {
+    
+      var handle: AuthStateDidChangeListenerHandle?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super .viewWillAppear(animated);
+        
+        // Begin Firebase authentication listener
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+        }
+        // End Firebase authentication listener
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Removing Firebase authentication listener
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
 
    
     
