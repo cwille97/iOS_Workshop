@@ -72,6 +72,8 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
         // use Firebase authentication to validate credentials
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
         }
+        // Load the main home screen
+        performSegue(withIdentifier: "mainSegue", sender: self)
     }
     
     @IBAction func didCreateAccount(_ sender: Any) {
@@ -80,15 +82,29 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
             // ...
             guard let user = authResult?.user else { return }
         }
+        // use Firebase to login the user
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+        }
+        // Load the main home screen
+        performSegue(withIdentifier: "mainSegue", sender: self)
     }
 
     
     @IBAction func logOut(_ sender: Any) {
         // log out the user, return to home screen
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        // Load the login screen
+        performSegue(withIdentifier: "logoutSegue", sender: self)
     }
     
     @IBAction func submitPost(_ sender: Any) {
         // load up a form to create a post
+        performSegue(withIdentifier: "createSegue", sender: self)
     }
 }
 

@@ -39,7 +39,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="emailLogin:" destination="kg4-G9-CCN" eventType="touchUpInside" id="NPn-22-09l"/>
-                                    <segue destination="Xuy-cO-bQU" kind="show" id="LuA-gX-Ec6"/>
+                                    <segue destination="Xuy-cO-bQU" kind="show" identifier="mainSegue" id="LuA-gX-Ec6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BS-8N-zht">
@@ -138,7 +138,7 @@
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOut:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="Q7W-tF-5OS"/>
-                                    <segue destination="kg4-G9-CCN" kind="show" id="HeI-L3-84D"/>
+                                    <segue destination="kg4-G9-CCN" kind="show" identifier="logoutSegue" id="HeI-L3-84D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwl-Z4-hzf">
@@ -147,7 +147,7 @@
                                 <state key="normal" title="Submit a Post"/>
                                 <connections>
                                     <action selector="submitPost:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="c5t-5f-r1W"/>
-                                    <segue destination="5dP-zr-5wk" kind="show" id="xF1-Fx-7AH"/>
+                                    <segue destination="5dP-zr-5wk" kind="show" identifier="createSegue" id="xF1-Fx-7AH"/>
                                 </connections>
                             </button>
                         </subviews>
