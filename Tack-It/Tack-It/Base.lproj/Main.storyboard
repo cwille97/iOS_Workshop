@@ -194,7 +194,7 @@
                                 <connections>
                                     <action selector="cancelPost:" destination="5dP-zr-5wk" eventType="touchUpInside" id="PVO-kA-sNg"/>
                                     <action selector="logOut:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="qjQ-5p-tec"/>
-                                    <segue destination="Xuy-cO-bQU" kind="show" id="QFC-Dc-8i3"/>
+                                    <segue destination="Xuy-cO-bQU" kind="show" identifier="cancelSegue" id="QFC-Dc-8i3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00u-G8-7yL">
@@ -204,7 +204,7 @@
                                 <connections>
                                     <action selector="submitPost:" destination="Xuy-cO-bQU" eventType="touchUpInside" id="4OR-k8-cH5"/>
                                     <action selector="submitPost:" destination="5dP-zr-5wk" eventType="touchUpInside" id="sKF-zW-ob0"/>
-                                    <segue destination="Xuy-cO-bQU" kind="show" id="3wQ-Pc-XEh"/>
+                                    <segue destination="Xuy-cO-bQU" kind="show" identifier="submitSegue" id="3wQ-Pc-XEh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -222,6 +222,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LuA-gX-Ec6"/>
+        <segue reference="QFC-Dc-8i3"/>
     </inferredMetricsTieBreakers>
 </document>

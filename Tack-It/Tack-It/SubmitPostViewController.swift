@@ -37,11 +37,20 @@ class SubmitPostViewController: UIViewController {
     
     @IBAction func cancelPost(_ sender: Any) {
         // code to clear text fields and return to browsing screen
+        postTitle.text = ""
+        postDescription.text = ""
+        performSegue(withIdentifier: "cancelSegue", sender: self)
     }
     
     @IBAction func submitPost(_ sender: Any) {
-        // code to push the data to FireBase, clear text fields, and return to browsing screen
+        // code to push the data to FireBase
+        
+        //clear text fields and return to browsing screen
+        postTitle.text = ""
+        postDescription.text = ""
+        performSegue(withIdentifier: "submitSegue", sender: self)
     }
+    
     
     
 }
