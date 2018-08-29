@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D41087F2137533A00B7D333 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D41087E2137533A00B7D333 /* Post.swift */; };
 		3D59658F21243977008B8C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59658E21243977008B8C40 /* AppDelegate.swift */; };
 		3D59659121243977008B8C40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59659021243977008B8C40 /* ViewController.swift */; };
 		3D59659421243977008B8C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D59659221243977008B8C40 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D41087E2137533A00B7D333 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3D59658B21243977008B8C40 /* Tack-It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tack-It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D59658E21243977008B8C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D59659021243977008B8C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				3D59658E21243977008B8C40 /* AppDelegate.swift */,
 				3D59659021243977008B8C40 /* ViewController.swift */,
 				3D59659221243977008B8C40 /* Main.storyboard */,
+				3D41087E2137533A00B7D333 /* Post.swift */,
 				3DB2E5C921278C7800F638A9 /* SubmitPostViewController.swift */,
 				3D6A54212125FD1100B70CF1 /* TableViewCellController.swift */,
 				3D59659521243978008B8C40 /* Assets.xcassets */,
@@ -311,15 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tack-It/Pods-Tack-It-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
@@ -339,6 +338,7 @@
 				3D6A54222125FD1100B70CF1 /* TableViewCellController.swift in Sources */,
 				3DB2E5CA21278C7800F638A9 /* SubmitPostViewController.swift in Sources */,
 				3D59658F21243977008B8C40 /* AppDelegate.swift in Sources */,
+				3D41087F2137533A00B7D333 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
